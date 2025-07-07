@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:centerColor="#FFD700"
+            android:startColor="#FFEC8B"
+            android:endColor="#FFD700"
+            android:gradientRadius="400" />
+        </shape>
+    </item>
+
+    <item>
+        <bitmap
+            android:src="@drawable/logback4"
+        android:tileMode="repeat" />
+    </item>
+</layer-list>

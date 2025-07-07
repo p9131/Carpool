@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".history.history">
+
+    <TextView
+        android:id="@+id/historytitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:fontFamily="@font/amaranth"
+        android:gravity="center"
+        android:text="@string/history_title"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        />
+    </androidx.appcompat.widget.LinearLayoutCompat>

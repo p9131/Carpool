@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextStyle">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#30ffffff</item>
+    </style>
+
+    <style name="EditTextStyle2">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#4AFFFFFF</item>
+    </style>
+
+    <style name="EditTextCommonStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:fontFamily">@font/amaranth</item>
+        <item name="android:paddingLeft">9sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#68ECE5E5</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:fontFamily">@font/amaranth</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ButtonStyle2" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:fontFamily">@font/amaranth</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+</resources>

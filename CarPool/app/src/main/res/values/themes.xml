@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mile" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/textgold</item>
+        <item name="colorPrimaryVariant">@color/textgold</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:statusBarColor">@color/textgold</item>
+    </style>
+
+    <style name="Theme.Mile" parent="Base.Theme.Mile" />
+    
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slidein</item>
+        <item name="android:activityOpenExitAnimation">@anim/slideout</item>
+    </style>
+</resources>

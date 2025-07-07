@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/signup_back"
+    tools:context=".home">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView3"
+        android:name="com.example.mile.profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigator"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        tools:layout="@layout/fragment_profile2" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/navigate_back"
+        android:elevation="0dp"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@drawable/item_select"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/downmenu" />
+
+</RelativeLayout>

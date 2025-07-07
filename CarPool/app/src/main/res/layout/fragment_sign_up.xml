@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_back"
+    android:orientation="vertical"
+    tools:context=".Sign_up">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/welcome_back2"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/signupSentence"
+            android:textAlignment="center"
+            android:textColor="@color/textgold"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/signUpFirstName"
+            style="@style/EditTextCommonStyle"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:hint="@string/enterFirstName"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/signUpLastName"
+            style="@style/EditTextCommonStyle"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:hint="@string/enterLastName"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/signUpEmail"
+            style="@style/EditTextCommonStyle"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:hint="@string/enterEmail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signUpPassword"
+            style="@style/EditTextCommonStyle"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:hint="@string/enterPass"
+            android:inputType="textPassword" />
+
+
+        <RadioGroup
+            android:id="@+id/accountTypeRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/studentRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:text="@string/student"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/driverRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:text="@string/driver" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/policytxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/policytxt"
+            android:textAlignment="center"
+            android:textColor="@color/textgold"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpbtn"
+            style="@style/ButtonStyle"
+            android:text="@string/signUpButton" />
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@drawable/welcome_back"
+    tools:context=".Tracking_Page">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:text="@string/track_your_order_now"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="340dp"
+        android:layout_height="599dp"
+        android:background="@drawable/welcome_back2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.294">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/startTimeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="216dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/order_id"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/status"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/startPointTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tickets_number"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/destinationTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="#76324"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Processing"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/startPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="11/20/2023 \n8:02 PM"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ImageView
+        android:id="@+id/vectorImage"
+        android:layout_width="127dp"
+        android:layout_height="68dp"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center_vertical"
+        android:src="@drawable/baseline_location_on_24"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
