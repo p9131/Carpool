@@ -93,7 +93,7 @@ Use these accounts for testing:
 
 1. Clone the repo:  
    ```bash
-   git clone https://github.com/[username]/carpool-app.git
+   git clone https://github.com/p9131/Carpool.git
    ```
 2. Open in Android Studio  
 3. Add your `google-services.json` (Firebase config)  
