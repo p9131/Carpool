@@ -1,0 +1,94 @@
+<!-- driver.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Web Application</title>
+
+    <link rel="stylesheet" href="driver.css">
+</head>
+<body>
+
+
+<header>
+    <h1>Driver Web Application</h1>
+</header>
+
+<section>
+    <h2>Trips List</h2>
+    <table id="tripsTable">
+        <thead>
+        <tr>
+            <th>Start Time</th>
+            <th>Start Location</th>
+            <th>Destination</th>
+            <th>Total Users</th>
+        </tr>
+        </thead>
+        <tbody id="tripsBody">
+        <!-- Dynamic data will be added here -->
+        </tbody>
+    </table>
+</section>
+
+<section id="tripDetailsSection" style="display: none;">
+    <h2>Trip Details</h2>
+    <p id="tripDestination"></p>
+    <p id="tripStartPoint"></p>
+
+    <h3>Users Requests</h3>
+    <ul id="userRequestsList">
+        <!-- Sample user request, replace with dynamic data -->
+        <li>User 1</li>
+        <li>User 2</li>
+        <li>User 3</li>
+    </ul>
+
+    <button onclick="acceptAllRequests()">Accept All Requests</button>
+</section>
+
+<section>
+    <h2>Add New Trip</h2>
+    <form id="addTripForm">
+        <label for="tripDestination">Destination:</label>
+        <select id="tripDestination1" name="tripDestination">
+            <option value="Abaseya">Abaseya</option>
+            <option value="New Cairo">New Cairo</option>
+            <option value="Nasr City">Nasr City</option>
+            <option value="5th Settlement">5th Settlement</option>
+        </select>
+
+        <br/><br/>
+
+        <label for="tripStartPoint">Start Point:</label>
+        <select id="tripStartPoint1" name="tripStartPoint">
+            <option value="Gate 3">Gate 3</option>
+            <option value="Gate 4">Gate 4</option>
+        </select>
+        <br><br>
+
+        <label for="tripDate">Select Date:</label>
+        <input type="date" id="tripDate" name="tripDate" min="2023-01-01">
+
+        <br><br>
+
+        <label for="tripTime">Select Time:</label>
+        <select id="tripTime" name="tripTime">
+            <option value="07:00">7:00 AM</option>
+            <option value="17:30">5:30 PM</option>
+        </select>
+
+        <br><br>
+
+        <button type="button" onclick="switchPoints()">Switch Points</button>
+
+        <button type="button" onclick="addNewTrip()">Add Trip</button>
+    </form>
+    <br><br>
+    <button type="button" onclick="LogOut()">Log Out</button>
+
+</section>
+<script type="text/javascript" src="./driver.js"></script>
+</body>
+</html>
